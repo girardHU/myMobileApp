@@ -1,4 +1,4 @@
-package com.example.myApp
+package com.example.Hunik
 
 import io.flutter.embedding.android.FlutterActivity
 

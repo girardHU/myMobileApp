@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:Hunik/views/home.dart';
 import 'package:Hunik/views/loading.dart';
 import 'package:Hunik/views/training.dart';
+import 'package:Hunik/views/dietetic.dart';
 import 'package:Hunik/views/english_words.dart';
 import 'package:Hunik/views/to_do.dart';
 import 'package:Hunik/views/calendar.dart';
@@ -14,6 +15,7 @@ void main() {
       '/' : (context) => LoadingView(),
       '/home' : (context) => HomeView(),
       '/training' : (context) => TrainingView(),
+      '/dietetic' : (context) => DieteticView(),
       '/english' : (context) => EnglishWordsView(),
       '/to_do' : (context) => ToDoView(),
       '/calendar' : (context) => CalendarView(),
@@ -21,7 +23,7 @@ void main() {
   ));
 }
 
-// class MyApp extends StatelessWidget {
+// class Hunik extends StatelessWidget {
 //   // This widget is the root of your application.
 //   @override
 //   Widget build(BuildContext context) {

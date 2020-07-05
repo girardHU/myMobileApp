@@ -25,40 +25,35 @@ class CustomDrawerWidget extends StatelessWidget {
                 leading: Icon(Icons.date_range),
                 title: Text('Calendrier'),
                 onTap: () {
-                  // Update the state of the app.
-                  // ...
+                  Navigator.pushNamed(context, '/calendar');
                 },
               ),
               ListTile(
                 leading: Icon(Icons.check_circle_outline),
                 title: Text('To Do'),
                 onTap: () {
-                  // Update the state of the app.
-                  // ...
+                  Navigator.pushNamed(context, '/to_do');
                 },
               ),
               ListTile(
                 leading: Icon(Icons.fitness_center),
                 title: Text('Entrainement'),
                 onTap: () {
-                  // Update the state of the app.
-                  // ...
+                  Navigator.pushNamed(context, '/training');
                 },
               ),
               ListTile(
                 leading: Icon(Icons.favorite_border),
                 title: Text('Diet\''),
                 onTap: () {
-                  // Update the state of the app.
-                  // ...
+                  Navigator.pushNamed(context, '/dietetic');
                 },
               ),
               ListTile(
                 leading: Icon(Icons.chat_bubble_outline),
                 title: Text('Anglais'),
                 onTap: () {
-                  // Update the state of the app.
-                  // ...
+                  Navigator.pushNamed(context, '/english');
                 },
               ),
             ],
