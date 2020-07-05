@@ -1,55 +1,41 @@
 import 'package:flutter/material.dart';
-import 'common/custom_app_bar.dart';
-import 'common/custom_drawer.dart';
+import 'package:Hunik/views/home.dart';
+import 'package:Hunik/views/loading.dart';
+import 'package:Hunik/views/training.dart';
+import 'package:Hunik/views/english_words.dart';
+import 'package:Hunik/views/to_do.dart';
+import 'package:Hunik/views/calendar.dart';
 
 
 void main() {
-  runApp(MyApp());
+  runApp(MaterialApp(
+    initialRoute: '/home',
+    routes: {
+      '/' : (context) => LoadingView(),
+      '/home' : (context) => HomeView(),
+      '/training' : (context) => TrainingView(),
+      '/english' : (context) => EnglishWordsView(),
+      '/to_do' : (context) => ToDoView(),
+      '/calendar' : (context) => CalendarView(),
+    }
+  ));
 }
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
+// class MyApp extends StatelessWidget {
+//   // This widget is the root of your application.
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: 'Hunik App',
+//       theme: ThemeData(
+//         primaryColor: Color(0xFFD1D6DC),
+//         visualDensity: VisualDensity.adaptivePlatformDensity,
+//       ),
+//       home: HomeView(title: 'Hunik Home Page'),
+//       routes: {
+//         '/': (context) => LoadingView(),
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: CustomBarWidget(
-        title: 'Hunik',
-      ),
-      body: Container(
-        color: Color(0xFFD1D6DC),
-      ),
-      drawer: CustomDrawerWidget(),
-    );
-  }
-}
+//       }
+//     );
+//   }
+// }

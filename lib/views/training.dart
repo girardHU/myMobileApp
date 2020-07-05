@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class TrainingView extends StatefulWidget {
   @override
@@ -8,8 +8,8 @@ class TrainingView extends StatefulWidget {
 class _TrainingViewState extends State<TrainingView> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      body: SafeArea(child: Text('Training View'),),
     );
   }
 }
