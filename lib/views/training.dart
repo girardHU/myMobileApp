@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../common/custom_app_bar.dart';
 
 class TrainingView extends StatefulWidget {
   @override
@@ -9,7 +10,8 @@ class _TrainingViewState extends State<TrainingView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(child: Text('Training View'),),
+      appBar: CustomBarWidget(),
+      body: Text('Training View'),
     );
   }
 }

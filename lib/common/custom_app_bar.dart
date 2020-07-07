@@ -2,17 +2,12 @@ import 'package:flutter/material.dart';
 
 class CustomBarWidget extends StatelessWidget implements PreferredSizeWidget {
 
-  GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
-
-  final String title;
+  // GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
 
   @override
   final Size preferredSize;
 
-  CustomBarWidget({
-    @required this.title,
-  })
-  : preferredSize = Size(double.infinity, 90);
+  CustomBarWidget() : preferredSize = Size(double.infinity, 90);
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +45,7 @@ class CustomBarWidget extends StatelessWidget implements PreferredSizeWidget {
                   Container(
                     margin: EdgeInsets.fromLTRB(0, 0, 155, 0),
                     child: Text(
-                      title,
+                      'Hunik',
                       style: TextStyle(fontSize: 30,color: Colors.white),
                       ),
                   ),

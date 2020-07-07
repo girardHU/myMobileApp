@@ -16,9 +16,10 @@ class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: CustomBarWidget(title: 'Hunik',),
+      appBar: CustomBarWidget(),
       body: Container(
         color: Color(0xFFD1D6DC),
+        child: Text('Home View'),
       ),
       drawer: CustomDrawerWidget(),
     );

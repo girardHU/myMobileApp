@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CustomDrawerWidget extends StatelessWidget {
 
-  GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
+  // GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey();
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +21,13 @@ class CustomDrawerWidget extends StatelessWidget {
               //     color: Colors.blue,
               //   ),
               // ),
+              ListTile(
+                leading: Icon(Icons.home),
+                title: Text('Home'),
+                onTap: () {
+                  Navigator.pushReplacementNamed(context, '/home');
+                },
+              ),
               ListTile(
                 leading: Icon(Icons.date_range),
                 title: Text('Calendrier'),
